@@ -115,6 +115,10 @@ a.noDecoration:hover{text-decoration: underline;}
 	margin: 0;
 }
 
+/*flex display, flex-direction: row means containers align in a row
+* with flex-wrap: wrap, as screen width gets smaller, containers move to next row
+* justify-content: space-around = each container separate evenly with space around them
+*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -141,17 +145,10 @@ a.noDecoration:hover{text-decoration: underline;}
 	text-align: center;
 }
 
-.flex-container .content-left{
-	width: 58%;
-}
-
-.flex-container .content-right{
-	width: 38%;
-}
 
 .content-margin{
 	margin: 0 50px;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 .content-justify{
@@ -233,5 +230,18 @@ p{
     h2{
         font-size: 40px;
     }
+	
+	/* On a desktop, the contents on left and right
+	* e.g. homepage, blog on left, pictures on right, have a fixed size to them
+	*/
+	.flex-container .content-left{
+	width: 58%;
+	margin: 0px 10px;
+	}
+
+	.flex-container .content-right{
+	width: 38%;
+	margin: 0px 10px;
+	}
 }
 
