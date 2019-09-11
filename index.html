@@ -4,6 +4,7 @@
 <title>
     Lisa's Travel Blog
 </title>
+
 	<!-- Make webpage fit on smaller screens -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,68 +13,75 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet"> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="Javascript/javascript.js"></script>
 </head>
 
 <body>
+
+
+
+
 <div>
 	<div class="header" style="background-image: url(images/banner-hiker.jpg);">
 		<h1 id="site-title">Lisa's Travel Blog</h1>
 		<input id="search-bar" type="text" placeholder="Search..">
 		<!--NAVIGATION-->
-		<ul class="arial-font nav-bar-trapezoid" id="nav-bar">
-			<li id="active-nav-bar"><a href="index.html">Home</a></li>
-			<li><a href="about/index.html">About</a></li>
-			<li><a href="destinations/index.html">Destinations</a></li>
-			<li><a href="travel_tips/index.html">Travel Tips</a></li>
-			<li><a href="gallery/index.html">Gallery</a></li>
-			<li><a href="blog/index.html">Blog</a></li>
-		</ul>
+			<ul class="arial-font nav-bar-trapezoid" id="nav-bar">
+				<li id="active-nav-bar"><a href="index.html">Home</a></li>
+				<li><a href="about/index.html">About</a></li>
+				<li><a href="destinations/index.html">Destinations</a></li>
+				<li><a href="travel_tips/index.html">Travel Tips</a></li>
+				<li><a href="gallery/index.html">Gallery</a></li>
+				<li><a href="blog/index.html">Blog</a></li>
+			</ul>
 	</div>
 </div>
 
 
 <!--CONTENT-->
+<img src="images/Icons/menu-icon.png" id="menu">
 
 <!---Hero Banner -->
 <div class="content-padding">
-        <h2 class="content-center divider">Welcome to my Blog</h2>
-	<div class="content-margin flex-container">
-
-		<div class="content-left">
-			<h2>Top Posts</h2>
-			<!---Blog 1 -->
-            <p class="blog-titles arial-font divider"><a class="noDecoration" href="blog/blogpost_vancuver.html" decoration="none">A Long Weekend in Vancouver, British Columbia (Date??)</a></p>
-            
-			<div class="flex-item">
-				<a href="blog/blogpost_vancuver.html"><img class="blog-img" style="width: auto" style="height: auto" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20city%20view.jpg" alt="City view of Vancuver from a nearby beach"></a>
-            </div>
-            <div class="flex-item"><p class="arial-font">Vancouver, BC is one of my favorite cities to go for a relaxed urban vacation with a 
-                liberal helping of outdoor activities. It’s like Seattle (a city that I love) but somehow a little bit 
-                better – maybe because it’s Canadian? In general I’m a pretty lazy, anti-exercise person, but something about Vancouver’s parks and trails lures me to get onto a bike to feel the wind through my hair as I pedal along the beaches and seawall....</p>
+    <h2 class="content-center divider">Welcome to my Blog</h2>
+		<div class="flex-container">
+			<div class="content-left">
+				<h2>Top Posts</h2>
+				<!---Blog 1 -->
+				<p class="blog-titles arial-font divider"><a class="noDecoration" href="blog/blogpost_vancuver.html" decoration="none">A Long Weekend in Vancouver, British Columbia (Date??)</a></p>
+				
+				<div class="flex-item">
+					<a href="blog/blogpost_vancuver.html"><img class="blog-img" style="width: auto" style="height: auto" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20city%20view.jpg" alt="City view of Vancuver from a nearby beach"></a>
+				</div>
+				<div class="flex-item"><p class="arial-font">Vancouver, BC is one of my favorite cities to go for a relaxed urban vacation with a 
+					liberal helping of outdoor activities. It’s like Seattle (a city that I love) but somehow a little bit 
+					better – maybe because it’s Canadian? In general I’m a pretty lazy, anti-exercise person, but something about Vancouver’s parks and trails lures me to get onto a bike to feel the wind through my hair as I pedal along the beaches and seawall....</p>
+				</div>
+				<br>
+				<p class="blog-titles arial-font divider"><a class="noDecoration" href="" decoration="none">The next Travel Story</a></p>
+				
+				<div class="flex-item">
+					<a href=""><img class="blog-img" style="width: auto" style="height: auto" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20VanDusen%20selfie.jpeg" alt="Selfie at the Van Dusen Botanical Garden"></a>
+				</div>
+				<div class="flex-item"><p class="arial-font">Input next blog snippet here....</p>
+				</div>
+				<br>
 			</div>
-			<br>
-            <p class="blog-titles arial-font divider"><a class="noDecoration" href="" decoration="none">The next Travel Story</a></p>
-            
-			<div class="flex-item">
-				<a href=""><img class="blog-img" style="width: auto" style="height: auto" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20VanDusen%20selfie.jpeg" alt="Selfie at the Van Dusen Botanical Garden"></a>
-            </div>
-            <div class="flex-item"><p class="arial-font">Input next blog snippet here....</p>
-			</div>
-			<br>
-		</div>
         
-		<div class="content-right">
-			<h2>Best Pictures</h2>
-			<!---Best Pictures Image 1 -->
-			<h3>Vancouver</h3>
-            <a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20Lynn%20Canyon%20Park.JPG" alt="Lynn Canyon Park in Vancouver"></a>
-            <a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver_Chinese_garden_4.JPG" alt="Chinese Garden in Vancouver"> </a>
-            <a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20totems.jpg" alt="First Nation Tribes Totems"> </a>
-			<a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20Olympic%20Cauldron.JPG" alt="Olympic Cauldron in Vancouver"> </a>
-			<br>
-			<h3 style="clear: both">Portugal</h3>
-			<a href="gallery/index.html"> <img class="gallery-img" src="images/portugalHol.jpg" alt="An empty but sunny blue skied beach with rows of empty sun beds"> </a>
-			<a href="gallery/index.html"> <img class="gallery-img" src="images/door.jpg" alt="A side of an old building in Portugal, with a very old, 16th century door and bars on the windows."> </a>
+			<div class="content-right">
+				<h2>Best Pictures</h2>
+				<!---Best Pictures Image 1 -->
+				<h3>Vancouver</h3>
+				<a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20Lynn%20Canyon%20Park.JPG" alt="Lynn Canyon Park in Vancouver"></a>
+				<a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver_Chinese_garden_4.JPG" alt="Chinese Garden in Vancouver"> </a>
+				<a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20totems.jpg" alt="First Nation Tribes Totems"> </a>
+				<a href="blog/blogpost_vancuver.html"> <img class="gallery-img" id="myImg" src="images/Lisa_pics/Vancuver_Blog/Vancouver%20-%20Olympic%20Cauldron.JPG" alt="Olympic Cauldron in Vancouver"> </a>
+				<br>
+				<h3 style="clear: both">Portugal</h3>
+				<a href="gallery/index.html"> <img class="gallery-img" src="images/portugalHol.jpg" alt="An empty but sunny blue skied beach with rows of empty sun beds"> </a>
+				<a href="gallery/index.html"> <img class="gallery-img" src="images/door.jpg" alt="A side of an old building in Portugal, with a very old, 16th century door and bars on the windows."> </a>
+			</div>
 		</div>
 	</div>
 </div>
